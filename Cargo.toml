@@ -33,6 +33,9 @@ version = "*"
 [dependencies.plume-common]
 path = "plume-common"
 
+[dependencies.plume-front]
+path = "plume-front"
+
 [dependencies.plume-models]
 path = "plume-models"
 
@@ -58,4 +61,4 @@ git = "https://github.com/BaptisteGelez/rocket_i18n"
 rev = "75a3bfd7b847324c078a355a7f101f8241a9f59b"
 
 [workspace]
-members = ["plume-models", "plume-common"]
+members = ["plume-models", "plume-common", "plume-front"]
