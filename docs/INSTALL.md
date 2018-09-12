@@ -9,7 +9,7 @@ In order to be installed and to work correctly, Plume needs:
 - *GCC* and *make*  (to compile C dependencies)
 - *PostgreSQL* (for the database)
 - *GetText* (to manage translations)
-- *Rust* and *Cargo* (to build the code)
+- *Rust*, *Cargo* and *Cargo Web* (to build the code)
 - *OpenSSL* and *OpenSSL librairies* (for security)
 
 All the following instructions will need a terminal.
@@ -94,6 +94,20 @@ cargo build
 ```
 
 We may provide precompiled packages and Docker images in the future; if you have experience in these fields and want to help, feel free to discuss this in issues and to propose pull-requests!
+
+## Building the front-end
+
+Plume don't use JavaScript for front-end scripts, but Rust, which means that you will have to build them too. A special cargo subcommand is needed for that.
+
+```bash
+# Install the command to build the front-end
+cargo install cargo-web
+
+# Build it
+cd plume-front
+cargo web build
+cd ..
+```
 
 ## Configuring PostgreSQL
 
@@ -196,7 +210,7 @@ server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
     server_name blog.example.org;
-    
+
     access_log  /var/log/nginx/access.log;
     root /home/plume/Plume/ ;
 
