@@ -112,6 +112,8 @@ fn main() {
             routes::session::delete,
 
             routes::static_files,
+            routes::js_front,
+            routes::wasm_front,
 
             routes::tags::tag,
             routes::tags::paginated_tag,
