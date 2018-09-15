@@ -114,6 +114,7 @@ fn main() {
             routes::static_files,
             routes::js_front,
             routes::wasm_front,
+            routes::editor,
 
             routes::tags::tag,
             routes::tags::paginated_tag,

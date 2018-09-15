@@ -1547,6 +1547,7 @@ dependencies = [
 name = "plume-front"
 version = "0.2.0"
 dependencies = [
+ "rand 0.5.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "stdweb 0.4.9 (registry+https://github.com/rust-lang/crates.io-index)",
  "yew 0.5.0 (git+https://github.com/DenisKolodin/yew?rev=e6fc66e185c83bb9bb08a86750a57a3558bc9a18)",
 ]
@@ -1715,6 +1716,7 @@ dependencies = [
  "fuchsia-zircon 0.3.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "libc 0.2.43 (registry+https://github.com/rust-lang/crates.io-index)",
  "rand_core 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "stdweb 0.4.9 (registry+https://github.com/rust-lang/crates.io-index)",
  "winapi 0.3.5 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
